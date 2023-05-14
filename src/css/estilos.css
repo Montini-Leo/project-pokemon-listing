@@ -1,0 +1,142 @@
+body{
+    font-family: 'Poppins' , sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url(./modes/light-mode.jpg);
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+
+body.modo-escuro{
+    background-image: url(./modes/dark-mode.jpg);
+    background-color: #212121;
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+main .cartao-pokemon{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .grass:hover{
+    background-color: rgb(90, 220, 83);
+}
+
+main .fire:hover{
+    background-color: #ff7878;
+}
+
+main .water:hover{
+    background-color: #4760ff;
+}
+
+main .electric:hover{
+    background-color: rgb(255, 242, 63);
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #5c5c5c;
+}
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main .cartao-pokemon .gif{
+    width: 60px;
+    height: 60px;
+}
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.veneno{
+    background-color: #df67ddfb;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.eletrico{
+    background-color: gold;
+}
+
+.voador{
+    background-color: aquamarine;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
